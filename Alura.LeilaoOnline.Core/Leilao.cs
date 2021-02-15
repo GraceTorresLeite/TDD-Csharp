@@ -13,16 +13,19 @@ namespace Alura.LeilaoOnline.Core
     {
         private Interessada _ultimoCliente;
         private IList<Lance> _lances;
+        private IModalidadeAvaliacao _avaliador;
+
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
         public EstadoLeilao Estado { get; private set; }
 
-        public Leilao(string peca)
+        public Leilao(string peca, IModalidadeAvaliacao avaliador)
         {
             Peca = peca;
             _lances = new List<Lance>();
             Estado = EstadoLeilao.LeilaoAntesDoPregao;
+            _avaliador = avaliador;
         }
 
         private bool NovoLanceEhAceito(Interessada cliente, double valor)
@@ -30,13 +33,14 @@ namespace Alura.LeilaoOnline.Core
             return (Estado == EstadoLeilao.LeilaoEmAndamento)
                 && (cliente != _ultimoCliente);
         }
+
         public void RecebeLance(Interessada cliente, double valor)
-        {    
-                if (NovoLanceEhAceito(cliente,valor))
-                {
-                    _lances.Add(new Lance(cliente, valor));
-                    _ultimoCliente = cliente;
-                }   
+        {
+            if (NovoLanceEhAceito(cliente, valor))
+            {
+                _lances.Add(new Lance(cliente, valor));
+                _ultimoCliente = cliente;
+            }
         }
 
         public void IniciaPregao()
@@ -44,25 +48,15 @@ namespace Alura.LeilaoOnline.Core
             Estado = EstadoLeilao.LeilaoEmAndamento;
         }
 
-
-        //Para resolver, alteramos o uso de Last() para LastOrDefault(), 
-        //    o qual se diferencia do primeiro por verificar se está vazio,
-        //    e se estiver, retorna um objeto default qualquer.
-        //    Para um enumerado de lances, definimos o retorno com o 
-        //    método DefaultIfEmpty() criando um objeto a ser usado neste 
-        //    caso com cliente null e valor 0.
         public void TerminaPregao()
         {
             if (Estado != EstadoLeilao.LeilaoEmAndamento)
             {
                 throw new System.InvalidOperationException("Não é possível terminar o pregão sem que ele tenha começado. Para isso, utilize o método IniciaPregao().");
             }
-            Ganhador = Lances
-                .DefaultIfEmpty(new Lance(null, 0))
-                .OrderBy(l => l.Valor)
-                .LastOrDefault();
+            Ganhador = _avaliador.Avalia(this);
             Estado = EstadoLeilao.LeilaoFinalizado;
         }
-
     }
 }
+
