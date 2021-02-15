@@ -3,38 +3,62 @@ using System.Collections.Generic;
 
 namespace Alura.LeilaoOnline.Core
 {
+    public enum EstadoLeilao
+    {
+        LeilaoAntesDoPregao,
+        LeilaoEmAndamento,
+        LeilaoFinalizado
+    }
     public class Leilao
     {
+        private Interessada _ultimoCliente;
         private IList<Lance> _lances;
-       
-
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
+        public EstadoLeilao Estado { get; private set; }
 
         public Leilao(string peca)
         {
             Peca = peca;
             _lances = new List<Lance>();
+            Estado = EstadoLeilao.LeilaoAntesDoPregao;
         }
 
-        public void RecebeLance(Interessada cliente, double valor)
+        private bool NovoLanceEhAceito(Interessada cliente, double valor)
         {
-            _lances.Add(new Lance(cliente, valor));
+            return (Estado == EstadoLeilao.LeilaoEmAndamento)
+                && (cliente != _ultimoCliente);
+        }
+        public void RecebeLance(Interessada cliente, double valor)
+        {    
+                if (NovoLanceEhAceito(cliente,valor))
+                {
+                    _lances.Add(new Lance(cliente, valor));
+                    _ultimoCliente = cliente;
+                }   
         }
 
         public void IniciaPregao()
         {
-
+            Estado = EstadoLeilao.LeilaoEmAndamento;
         }
 
+
+        //Para resolver, alteramos o uso de Last() para LastOrDefault(), 
+        //    o qual se diferencia do primeiro por verificar se está vazio,
+        //    e se estiver, retorna um objeto default qualquer.
+        //    Para um enumerado de lances, definimos o retorno com o 
+        //    método DefaultIfEmpty() criando um objeto a ser usado neste 
+        //    caso com cliente null e valor 0.
         public void TerminaPregao()
         {
             Ganhador = Lances
-            .OrderBy(lanceOrdenado => lanceOrdenado.Valor)
-            .Last();
+                .DefaultIfEmpty(new Lance(null, 0))
+                .OrderBy(l => l.Valor)
+                .LastOrDefault();
+            Estado = EstadoLeilao.LeilaoFinalizado;
         }
-    }
 
-   
+    }
 }
