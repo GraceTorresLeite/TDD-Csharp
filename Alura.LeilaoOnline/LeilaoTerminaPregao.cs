@@ -49,6 +49,7 @@ namespace Alura.LeilaoOnline
         {
             //Arranje - cenário
             var leilao = new Leilao("Van Gogh");
+            leilao.IniciaPregao();
 
             //Act - método sob teste
             leilao.TerminaPregao();
@@ -58,6 +59,31 @@ namespace Alura.LeilaoOnline
             var valorObtido = leilao.Ganhador.Valor;
 
             Assert.Equal(valorEsperado, valorObtido);
+        }
+
+        [Fact]
+        public void LancaInvalidOperationExceptionDadopregaoNaoIniciado()
+        {
+            //Arrange - cenário
+            var leilao = new Leilao("Van Gogh");
+
+            //try
+            //{
+            //    //Act - método sob teste
+            //    leilao.TerminaPregao();
+            //    Assert.True(false);
+            //}
+            //catch (System.Exception e)
+            //{
+            //    //Assert
+            //    Assert.IsType<System.InvalidOperationException>(e);
+            //}
+
+            //Assert
+            Assert.Throws<System.InvalidOperationException>(
+                //Act - método sob teste
+                () => leilao.TerminaPregao()
+            );
         }
 
     }
