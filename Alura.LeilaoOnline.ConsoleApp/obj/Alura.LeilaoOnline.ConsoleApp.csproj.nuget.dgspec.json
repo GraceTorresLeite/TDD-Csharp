@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj": {}
+    "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj": {
+    "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj",
         "projectName": "Alura.LeilaoOnline.ConsoleApp",
-        "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj",
+        "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\Alura.LeilaoOnline.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\grace.torres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,8 +33,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj": {
-                "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj"
+              "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj": {
+                "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj": {
+    "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+        "projectUniqueName": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
         "projectName": "Alura.LeilaoOnline.Core",
-        "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+        "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
         "packagesPath": "C:\\Users\\grace.torres\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\obj\\",
+        "outputPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

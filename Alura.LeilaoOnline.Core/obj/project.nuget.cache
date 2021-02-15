@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IRPucRprbpAhYrDoOj05qqWunW1urmrhM3uN68cgorS/iEyIbIiFG12g2XmCuZ7vb2BQRqz4gIEdU7zaEJOKHA==",
+  "dgSpecHash": "FFLVw00WDE+dMx4mix52xhZObvUgTaeh8qZdEj6cm71u0RhY7hevrLPmh15gWnuc75OSQne18jiDDJX5NQdASA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+  "projectFilePath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grace.torres\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

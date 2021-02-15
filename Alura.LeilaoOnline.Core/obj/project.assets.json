@@ -187,11 +187,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+      "projectUniqueName": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
       "projectName": "Alura.LeilaoOnline.Core",
-      "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
+      "projectPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\Alura.LeilaoOnline.Core.csproj",
       "packagesPath": "C:\\Users\\grace.torres\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline.Core\\obj\\",
+      "outputPath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

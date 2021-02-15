@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SpFAd+HDdE45KhNXS8r9/8aTftAWBGhiaR5CK6Asca4zDCS6vchDIMCs1HXHSQQloX8kNqDfzCDvF/gAugsfJQ==",
+  "dgSpecHash": "aUY7AWGe15sxmYfVyfZ6ysmipIdUmJ328Wg0fOaty0mDZhNtZRVF6nlLQBjqiugvt80PP+/RLF4VCBPvGPpwWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\Alura.LeilaoOnline\\Alura.LeilaoOnline.csproj",
+  "projectFilePath": "C:\\Users\\grace.torres\\source\\repos\\Alura.LeilaoOnline\\TDD-Csharp\\TDD-Csharp\\Alura.LeilaoOnline\\Alura.LeilaoOnline.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grace.torres\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
