@@ -7,6 +7,7 @@ namespace Alura.LeilaoOnline.ConsoleApp
     {
         private static void LeilaoComApenasUmLance()
         {
+            //Arrange
             var leilaoPeca1 = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilaoPeca1);
 
@@ -25,6 +26,7 @@ namespace Alura.LeilaoOnline.ConsoleApp
 
         private static void LeilaoComVariosLances()
         {
+            //Arrange
             var leilaoPeca1 = new Leilao("Van Gogh");
 
             var fulano = new Interessada("Fulano", leilaoPeca1);
